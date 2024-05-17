@@ -1,0 +1,1119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+/* шапка */
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header-content {
+    width: 1440px;
+    padding: 40px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    box-sizing: border-box;
+
+}
+
+.header-logo-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: #1C2A39;
+}
+
+.header-menu {
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.header-menu-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    color: #5C6A79;
+    text-transform: uppercase;
+}
+
+.header-menu-link:hover  {
+    color: #1C2A39;
+}
+
+.header-link-active {
+    font-weight: 900;
+    color: #1C2A39;
+}
+
+.header-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.header-icon__user,
+.header-icon__search,
+.header-icon__cart {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    position: relative;
+}
+
+.header-icon__user-img,
+.header-icon__search-img,
+.header-icon__cart-img {
+    object-fit: cover;
+    object-position: center center;
+} 
+
+.header-icon__cart-info {
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: #FF353A;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+
+}
+
+.cart-info-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.burger-menu {
+    display: none;
+}
+
+
+/* основная часть  */
+
+.main {
+    width: 1440px;
+    padding: 0 160px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 110px;
+}
+
+.promos {
+    position: absolute;
+    margin-top: 195px;
+    z-index: 20;
+}
+
+.promo-one-cover {
+    position: absolute;
+    top: 0px;
+    left: 490px;
+}
+
+.promo-two-cover {
+    position: absolute;
+    top: 280px;
+    left: 580px;
+}
+
+.promo-one-shadow {
+    box-shadow: 0px 24px 36px rgba(35, 31, 54, 0.28);
+    width: 110px;
+    height: 185px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+
+}
+
+.promo-two-shadow {
+    box-shadow: 0px 24px 36px rgba(35, 31, 54, 0.28);
+    width: 136px;
+    height: 255px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.promo-one {
+    position: absolute;
+    width: 149px;
+    height: 204px;
+    background-color: #9E98DC;
+    top: 0px;
+    /* left: 1060px; */
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.promo-two {
+    position: absolute;
+    width: 158px;
+    height: 273px;
+    background-color: #FF8FE6;
+    top: 0px;
+    /* left: 1140px; */
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.promo-one:hover,
+.promo-two:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.promo-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: #1C2A39;
+    text-transform: uppercase;
+    width: 110px;
+    padding-bottom: 4px;
+    
+}
+
+.promo-arrow {
+    width: 55px;
+    height: 12px;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.cover-wrapper {
+    width: 1120px;
+    height: 702px;
+    display: flex;
+}
+
+.cover-slide {
+    width: 1120px;
+    height: 702px;
+}
+
+.slide-one-img,
+.slide-two-img,
+.slide-three-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.cover-slide-mob {
+    display: none;
+}
+
+.cover-wrapper-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot-one,
+.dot-two,
+.dot-three {
+    background-color: #EFEEF6;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dot-active {
+    background-color: #9E98DC;
+}
+
+.bookshop {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+.books-list {
+    position: absolute;
+    left: 0px;
+    margin-top: 100px;
+    width: 416px;
+    height: 710px;
+    background-color: #EFEEF6;
+}
+
+.books-genre {
+    list-style-type: none;
+    padding-top: 45px;
+    padding-left: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.genre-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    color: #5C6A79;
+    cursor: pointer;
+}
+.genre-text:hover {
+    color: #1C2A39;
+}
+ 
+.genre-active {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #1C2A39;
+    position: relative;
+}
+
+.genre-active::before {
+    content: '●';
+    color: #756AD3;
+    position: absolute;
+    left: -14px;
+}
+
+.book-cards {
+    display: flex;
+    flex-flow: row wrap;
+    width: 924px;
+    column-gap: 76px;
+    row-gap: 96px;
+    position: relative;
+
+    padding-top: 150px;
+}
+
+.book-cards-new {
+    display: flex;
+    flex-flow: row wrap;
+    width: 924px;
+    column-gap: 76px;
+    row-gap: 96px;
+    position: relative;
+    padding-top: 0px;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    align-items: center;
+}
+
+.book-img {
+    width: 212px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.book-shadow {
+    width: 174px;
+    height: 282px;
+    box-shadow: 0px 24px 36px rgba(35, 31, 54, 0.28);
+}
+
+.book-img-content {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.book-specification {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 176px;
+}
+
+.book-author,
+.review-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: #5C6A79;
+}
+
+.book-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #1C2A39;
+}
+
+.review {
+    display: flex;
+    gap: 6px;
+}
+
+.review-rating {
+    background-color: #EEEDF5;
+    width: 64px;
+    height: 12px;
+    position: relative;
+}
+
+.stars-bg {
+    background-color: #F2C94C;
+    width: 1%;
+    height: 12px;
+    position: relative;
+}
+
+.rating-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 12px;
+}
+
+.book-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: #5C6A79;
+    width: 176px;
+    /* height: 38px; */
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    /* white-space: nowrap; */
+}
+
+.book-price {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    color: #1C2A39;
+}
+
+.book-button-buy {
+    height: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #4C3DB2;
+    background-color: transparent;
+    border: 1px solid #4C3DB2;
+    cursor: pointer;
+}
+
+.book-button-buy:hover {
+    background-color: #4C3DB2;
+    color: #FFFFFF;
+}
+
+.book-button-in-the-cart {
+    height: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #5C6A79;
+    background-color: transparent;
+    border: 1px solid #EEEDF5;
+    cursor: pointer;
+}
+
+.load-more {
+    margin-top: 96px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    width: 924px;
+}
+
+.load-more-button {
+    height: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #4C3DB2;
+    background-color: transparent;
+    border: 1px solid #4C3DB2;
+    cursor: pointer;
+    width: 176px;
+}
+
+.load-more-button:hover {
+    background-color: #4C3DB2;
+    color: #FFFFFF;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .header-content {
+        width: 960px;
+        padding: 32px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        box-sizing: border-box;
+    }
+
+    .main {
+        width: 100%;
+        padding: 0 32px;
+        box-sizing: border-box;
+        position: relative;
+        margin-top: 94px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promos {
+        position: absolute;
+        margin-top: 160px;
+        z-index: 20;
+        top: 0px;
+    }
+    
+    .promo-one-cover {
+        position: absolute;
+        top: 0px;
+        left: 28vw;
+    }
+    
+    .promo-two-cover {
+        position: absolute;
+        top: 200px;
+        left: 33vw;
+    }
+
+    .promo-one-shadow {
+        width: 110px;
+        height: 150px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    
+    }
+    
+    .promo-two-shadow {
+        width: 136px;
+        height: 190px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    
+    .promo-one {
+        position: absolute;
+        width: 130px;
+        height: 160px;
+    }
+    
+    .promo-two {
+        position: absolute;
+        width: 140px;
+        height: 200px;
+    }
+    
+    .cover-wrapper {
+        width: 960px;
+        height: 560px;
+        display: flex;
+    }
+    
+    .cover-slide {
+        width: 960px;
+        height: 560px;
+    }
+
+    .bookshop {
+        width: 960px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .book-cards {
+        width: 760px;
+        column-gap: 46px;
+        row-gap: 76px;
+    }
+
+    .book-cards-new {
+        width: 760px;
+        column-gap: 46px;
+        row-gap: 76px;
+        padding-top: 0px;
+    }
+
+    .book {
+        gap: 20px;
+    }
+
+    .book-img {
+        width: 160px;
+        height: 240px;
+    }
+    
+    .book-shadow {
+        width: 140px;
+        height: 220px;
+    }
+
+    .books-list {
+        width: 32vw;
+    }
+    
+    .books-genre {
+        padding-top: 45px;
+        padding-left: 7vw;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-content {
+        width: 768px;
+        padding: 20px 20px;
+    }
+
+    .main {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promos {
+        position: absolute;
+        margin-top: 120px;
+        z-index: 20;
+        top: 0px;
+    }
+    
+    .promo-one-cover {
+        position: absolute;
+        top: 0px;
+        left: 28vw;
+    }
+    
+    .promo-two-cover {
+        position: absolute;
+        top: 200px;
+        left: 33vw;
+    }
+
+    .promo-one-shadow {
+        width: 110px;
+        height: 150px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    
+    }
+    
+    .promo-two-shadow {
+        width: 136px;
+        height: 190px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    
+    .promo-one {
+        position: absolute;
+        width: 130px;
+        height: 160px;
+    }
+    
+    .promo-two {
+        position: absolute;
+        width: 140px;
+        height: 180px;
+    }
+
+    .cover {
+        width: 768px;
+    }
+
+    .cover-wrapper {
+        box-sizing: border-box;
+        width: fit-content;
+        height: 560px;
+        display: flex;
+    }
+    
+    .cover-slide {
+        width: 768px;
+        height: 560px;
+    }
+
+    .bookshop {
+        justify-content: center;
+    }
+
+    .book-cards {
+        width: 760px;
+        column-gap: 46px;
+        row-gap: 76px;
+        justify-content: flex-end;
+        padding-top: 100px;
+    }
+
+    .book-cards-new {
+        justify-content: flex-end;
+        width: 760px;
+        column-gap: 46px;
+        row-gap: 76px;
+        padding-top: 0px;
+    }
+
+    .books-list {
+        width: 50vw;
+        margin-top: 60px;
+    }
+    
+    .books-genre {
+        padding-top: 45px;
+        padding-left: 10vw;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .header-content {
+        width: 425px;
+        padding: 16px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        box-sizing: border-box;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-icons {
+        gap: 24px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .promos {
+        position: absolute;
+        margin-top: 120px;
+        z-index: 20;
+        top: 0px;
+    }
+    
+    .promo-one-cover {
+        position: absolute;
+        top: 280px;
+        left: -200px;
+    }
+    
+    .promo-two-cover {
+        position: absolute;
+        top: 280px;
+        left: 0;
+    }
+
+    .main {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        position: relative;
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cover {
+        width: 425px;
+        height: 260px;
+    }
+
+    .cover-wrapper {
+        box-sizing: border-box;
+        width: fit-content;
+        height: 260px;
+        display: flex;
+    }
+    
+    .cover-slide {
+        width: 425px;
+        height: 260px;
+    }
+
+    .bookshop {
+        justify-content: center;
+    }
+
+    .books-list {
+        width: 40vw;
+        margin-top: 460px;
+    }
+    
+    .books-genre {
+        padding-top: 40px;
+        padding-left: 10vw;
+    }
+
+    .book-img {
+        width: 160px;
+        height: 260px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    .book-shadow {
+        width: 150px;
+        height: 250px;
+        box-shadow: 0px 24px 36px rgba(35, 31, 54, 0.28);
+    }
+
+    .books-list {
+        width: 100%;
+        height: fit-content;
+        background-color: #EFEEF6;
+        /* overflow-x: scroll; */
+    }
+    
+    .books-genre {
+        padding: 24px 16px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 16px;
+    }
+
+    .genre-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        width: fit-content;
+        cursor: pointer;
+    }
+     
+    .genre-active {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+    }
+    
+    .genre-active::before {
+        content: none;
+    }
+
+    .book-cards {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 425px;
+        row-gap: 46px;
+        padding-top: 650px;
+    }
+
+    .book-cards-new {
+        justify-content: flex-end;
+        width: 425px;
+        column-gap: 16px;
+        row-gap: 46px;
+        padding-top: 0px;
+    }
+    
+    .book {
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        align-items: center;
+    }
+    
+}
+
+
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .header-content {
+        width: 320px;
+        padding: 16px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        box-sizing: border-box;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-icons {
+        gap: 16px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .promos {
+        position: absolute;
+        margin-top: 120px;
+        z-index: 20;
+        top: 0px;
+    }
+    
+    .promo-one-cover {
+        position: absolute;
+        top: 220px;
+        left: -160px;
+    }
+    
+    .promo-two-cover {
+        position: absolute;
+        top: 220px;
+        left: 0;
+    }
+
+    .promo-one-shadow {
+        width: 110px;
+        height: 150px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    
+    }
+    
+    .promo-two-shadow {
+        width: 120px;
+        height: 160px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    
+    .promo-one {
+        position: absolute;
+        width: 130px;
+        height: 160px;
+    }
+    
+    .promo-two {
+        position: absolute;
+        width: 140px;
+        height: 180px;
+    }
+
+
+    .main {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        position: relative;
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cover {
+        width: 320px;
+        height: 220px;
+    }
+
+    .cover-wrapper {
+        box-sizing: border-box;
+        width: fit-content;
+        height: 220px;
+        display: flex;
+    }
+    
+    .cover-slide {
+        width: 320px;
+        height: 220px;
+    }
+
+    .bookshop {
+        justify-content: center;
+    }
+
+    .book-img {
+        width: 140px;
+        height: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    .book-shadow {
+        width: 130px;
+        height: 190px;
+        box-shadow: 0px 24px 36px rgba(35, 31, 54, 0.28);
+    }
+
+    .books-list {
+        width: 100%;
+        height: fit-content;
+        background-color: #EFEEF6;
+        margin-top: 320px;
+    }
+
+    .books-genre {
+        padding: 24px 16px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 16px;
+    }
+
+    .genre-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        width: fit-content;
+        cursor: pointer;
+    }
+     
+    .genre-active {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+    }
+    
+    .genre-active::before {
+        content: none;
+    }
+
+    .book-cards {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 300px;
+        row-gap: 46px;
+        padding-top: 580px;
+    }
+
+    .book-cards-new {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 300px;
+        row-gap: 46px;
+        padding-top: 0px;
+    }
+    
+    .book {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .book-name {
+        font-size: 14px;
+    }
+
+    .book-price {
+        font-size: 11px;
+    }
+
+    .book-specification,
+    .book-info,
+    .book-description {
+        width: 140px;
+    }
+
+    .book-shadow {
+        height: 180px;
+    }
+}

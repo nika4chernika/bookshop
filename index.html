@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" type="text/css" href="./dist/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="promos">
+        <div class="promo-one-cover">
+            <div class="promo-one-shadow"></div>
+            <div class="promo-one"><a href="#">
+                <p class="promo-text">Change old book on new</p>
+                <img src="./images/arrow.svg" alt="" class="promo-arrow"></a>
+            </div>
+        </div>
+        <div class="promo-two-cover">
+            <div class="promo-two-shadow"></div>
+            <div class="promo-two"><a href="#">
+                <p class="promo-text">Top <br>100 <br>books <br>2022</p>
+                <img src="./images/arrow.svg" alt="" class="promo-arrow"></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+       <div class="header-content">
+            <div class="header-logo">
+                <a href="" class="header-logo-text">Bookshop</a>
+            </div>
+            <nav class="header-menu">
+                <a href="" class="header-menu-link header-link-active">Books</a>
+                <a href="" class="header-menu-link">Audiobooks</a>
+                <a href="" class="header-menu-link">Stationery & gifts</a>
+                <a href="" class="header-menu-link">Blog</a>
+            </nav>
+            <div class="header-icons">
+                <div class="header-icon__user">
+                    <img src="./images/user.svg" alt="" class="header-icon__user-img">
+                </div>
+                <div class="header-icon__search">
+                    <img src="./images/search.svg" alt="" class="header-icon__search-img">
+                </div>
+                <div class="header-icon__cart">
+                    <img src="./images/cart.svg" alt="" class="header-icon__cart-img">
+                    <div class="header-icon__cart-info">
+                        <p class="cart-info-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <img src="./images/hamburger-menu.svg" alt="" class="burger-icon">
+            </div>
+       </div>
+    </header>
+
+    <main class="main">
+        <div class="cover">
+            <div class="cover-wrapper">
+                <div class="cover-slide">
+                    <img src="./images/banner1.png" alt="black friday sale up to 60%" class="slide-one-img">
+                </div>
+            </div>
+            <div class="cover-wrapper-dots">
+                <div class="dot-one dot-active"></div>
+                <div class="dot-two"></div>
+                <div class="dot-three"></div>
+            </div>
+        </div>
+        <div class="bookshop">
+            <div class="books-list">
+                <ul class="books-genre">
+                    <li class="genre-text genre-active">Architecture</li>
+                    <li class="genre-text">Art & Fashion</li>
+                    <li class="genre-text">Biography</li>
+                    <li class="genre-text">Business</li>
+                    <li class="genre-text">Crafts & Hobbies</li>
+                    <li class="genre-text">Drama</li>
+                    <li class="genre-text">Fiction</li>
+                    <li class="genre-text">Food & Drink</li>
+                    <li class="genre-text">Health & Wellbeing</li>
+                    <li class="genre-text">History & Politics</li>
+                    <li class="genre-text">Humor</li>
+                    <li class="genre-text">Poetry</li>
+                    <li class="genre-text">Psychology</li>
+                    <li class="genre-text">Science</li>
+                    <li class="genre-text">Technology</li>
+                    <li class="genre-text">Travel & Maps</li>
+                </ul>
+            </div>
+            <div class="book-cards">   
+            </div>
+            <div class="load-more">
+                <button class="load-more-button">Load more</button>
+            </div>
+        </div>
+    </main>
+    <!-- <script src="./script.js"></script> -->
+    <script src="./src/index.js"></script>
+</body>
+</html>
